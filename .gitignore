@@ -1,0 +1,45 @@
+# ==============================================================================
+# GitIgnore - Ciberseguridad, Laboratorios y Auditoria
+# ==============================================================================
+
+# Claves criptograficas y certificados privados
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+!id_*.example
+*.pfx
+*.p12
+
+# Capturas de trafico de red y volcados de memoria
+*.pcap
+*.pcapng
+*.cap
+*.dmp
+*.core
+
+# Diccionarios y listas de palabras masivas
+wordlists/
+rockyou.txt
+*.wordlist
+
+# Archivos de entorno y credenciales locales
+.env
+.env.*
+!.env.example
+secrets/
+*.vault-pass*
+
+# Logs y reportes temporales de escaneo
+*.log
+reports/temp/
+results/temp/
+
+# Runtimes y editores
+.venv/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
